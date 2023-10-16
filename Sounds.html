@@ -1,0 +1,87 @@
+<!--Project Members: Andres Oberhelman , Ansh Patel, Israel Ibiwoye, Malhar Pandya-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>Meditation Tab</title>
+    <link rel="stylesheet" href="soundsstyle.css">
+    
+    <style>  
+    /* Embed Style */
+        #playlist{
+            list-style: none;
+            max-height: 300px;  /*Change max height and overflow allow for list to be scrollable*/
+            overflow:auto;
+        }
+        #playlist li a{
+            color: lightblue;
+            font-size: 30px;
+            text-decoration: none;
+            list-style: none;
+            max-height: 100px;
+            overflow:auto;          /*Adjusts the size,color,font style, and other attributes of the text*/
+            text-indent:10px;
+            font-family: "Helvetica", sans-serif;
+            color:lightskyblue;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            
+        }
+        #playlist .current-song a{
+            color:blue;
+        }
+    </style>
+</head>
+<div class="video">
+    <video src="./assets/video/background2.mp4" muted loop autoplay></video>  <!--Adds another video background-->
+</div>
+<body>
+    <div app>
+        <div class="app">
+            <center>Sounds Tab</center>
+        </div>
+            
+    </div>
+    <br></br>
+
+    <div buttons> 
+        <div class="buttons">   
+            <a href="index.html" type="button" class="button">  <!--Creates a button that leads to index.html-->
+                <span class="button__text">Home</span>
+                <span class="button__icon"></span>
+                <ion-icon name="home-outline"></ion-icon>
+            </a>
+        </div>
+    </div>
+            <br></br>
+
+    
+    <audio src="" controls id="audioPlayer">      
+    </audio>
+    <ul id="playlist">     <!--creates a unordered list of songs that can be played-->
+            <li class="current-song"><a href="./assets/music/The Breathtaking Beauty of Nature _ HD.mp3">-Beauty of Nature</a></li>
+            <li><a href="./assets/music/10 Min.Meditation Music for Positive Energy - GUARANTEED Find Inner Peace within 10 Min..mp3">-Inner Piece</a></li>
+            <li><a href="./assets/music/Winter ambiance Piano Music - Meditation music - Ease your mind - Short 3 minutes.mp3">-Winter Ambiance</a></li>
+            <li><a href="./assets/music/10 minute Ambient Music (Relaxation, Spa, Massage).mp3">-Relaxation Massage</a></li>    
+            <li><a href="./assets/music/💚 Most Beautiful Sunsets in 4K.mp3">-Sunsets</a></li>    
+            <li><a href="./assets/music/Halo Theme Song Original.mp3">-Heroes of Reach</a></li>   
+            <li><a href="./assets/music/15 Minute Meditation Music, Calm Music, Relax, Meditation, Stress Relief, Spa, Study, Sleep, ☯3527B.mp3">-River Relaxation</a></li>    
+            <li><a href="./assets/music/Ambience Summer Afternoon Sound Effects.mp3">-Summer Afternoon</a></li> 
+            <li><a href="./assets/music/Relaxing Celtic Music - Autumn Forest.mp3">-Celtic Autumn Forest</a></li>
+            <li><a href="./assets/music/Early Morning Sounds - Birds Singing.mp3">-Early Morning Birds</a></li>   
+    </ul>
+            
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+            <script src="audioPlayer.js"></script>
+            <script>
+                // loads the audio player
+                audioPlayer();
+            </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

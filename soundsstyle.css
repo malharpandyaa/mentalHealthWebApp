@@ -1,0 +1,63 @@
+/* Project Members: Andres Oberhelman , Ansh Patel, Israel Ibiwoye, Malhar Pandya */
+/*styling for Sounds Tab*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+.video{
+    width:100vw;    /* Styling for video to keep out margins*/
+    height:100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+   z-index:-1;
+
+}
+
+.video video{               
+    position: absolute;     
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* ^fixed the width and height of video to be in the middle */
+    min-width:100%;     /*height and width take up whole screen */
+    min-height:100%;
+   
+}
+
+.app center{    /* changes styling of app title */
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    align-items: center;    
+    justify-content: justify;
+    font-family: "Helvetica", sans-serif;
+    color:lightskyblue;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+
+.buttons{   /* buttons styling*/
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: relative;
+    align-items: center;
+    justify-content: justify;
+    font-family: "Helvetica", sans-serif;
+    color:#F0F8FF;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 600px){   /*Makes it so that height will change on different media 
+    platforms like phone and such*/
+.video video{
+height: 100%;
+}
+}
